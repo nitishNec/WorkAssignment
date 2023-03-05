@@ -26,8 +26,8 @@ RUN echo "ServerName localhost" | tee /etc/apache2/conf-available/servername.con
 RUN a2enconf servername
 # Configure vhost for mediawiki
 RUN mkdir /var/lib/mediawiki
-COPY mediawiki-1.31.0.tar.gz /var/lib/mediawiki
-RUN tar -xvzf /var/lib/mediawiki/mediawiki-1.31.0.tar.gz --directory /var/lib/mediawiki
+COPY mediawiki-1.39.2.tar.gz /var/lib/mediawiki
+RUN tar -xvzf /var/lib/mediawiki/mediawiki-1.39.2.tar.gz --directory /var/lib/mediawiki
 RUN mv /var/lib/mediawiki/mediawiki-*/* /var/lib/mediawiki
 RUN ln -s /var/lib/mediawiki /var/www/html/mediawiki
 COPY virtualhost.conf /etc/apache2/sites-available/
