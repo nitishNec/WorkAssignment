@@ -4,7 +4,7 @@ NOTE: CI-CD approach steps are added in CI-CD-Approach.docx .Please download thi
 ### Manual Deployment Steps
 
 ### Clone repo
-    git clone https://github.com/NitishSK/Assignment.git
+    git clone https://github.com/nitishNec/WorkAssignment.git
 
 ### Move to Assignment directory
 ```
