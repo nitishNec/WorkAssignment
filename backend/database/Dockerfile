@@ -1,6 +1,6 @@
 FROM ubuntu:20.04
 
-MAINTAINER Nitish kumar <kumar.snitish1994@gmail.com>
+MAINTAINER Nitish kumar <nitishsingh1005@gmail.com>
 LABEL Description="Mariadb database"
 RUN apt-get update \
  && DEBIAN_FRONTEND=noninteractive apt-get install -y mariadb-server mariadb-client \
