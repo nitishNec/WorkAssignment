@@ -8,7 +8,7 @@ NOTE: CI-CD approach steps are added in CI-CD-Approach.docx .Please download thi
 
 ### Move to Assignment directory
 ```
-   cd "Assignment"
+   cd "WorkAssignment"
 ```
 ### List all files and directory using below commands
 ```
@@ -16,18 +16,18 @@ NOTE: CI-CD approach steps are added in CI-CD-Approach.docx .Please download thi
 ```
 ### Output:
 ```
-drwxr-xr-x 3 root root 4.0K Sep  5 17:37 mediawiki
-drwxr-xr-x 3 root root 4.0K Sep  5 17:43 database
+drwxr-xr-x 3 root root 4.0K Sep  5 17:37 frontend/mediawiki
+drwxr-xr-x 3 root root 4.0K Sep  5 17:43 backend/database
 -rw-r--r-- 1 root root 3.2K Sep  5 17:48 README.md
 ```
 ```
-You will see two directory "database" and "mediawiki". These directory is divided based backend(mariaDB database for mediawiki) and frontend(mediawiki)
+You will see two directory "database" and "mediawiki". These directory is divided based on backend(mariaDB database for mediawiki) and frontend(mediawiki)
 ```
 # Database:
 
 ## Move to database directory now by using below commands
 ```
-  cd database
+  cd backend/database
 ```
 ### Again list all files and directory of database using below commands
 ```
@@ -65,7 +65,7 @@ drwxr-xr-x 3 root root 4.0K Sep  5 11:45 chart
 
 ### Steps to Deploy helm chart of database
 
-  1. Make sure you are inside database/chart
+  1. Make sure you are inside backend/database/chart
 
   2. Edit the image name and tag name of image in values.yaml
 
@@ -81,7 +81,7 @@ drwxr-xr-x 3 root root 4.0K Sep  5 11:45 chart
 
 ### Move to mediawiki directory now by using below commands 
 ```
-    cd mediawiki
+    cd frontend/mediawiki
 ```
 ### Again list all files and directory of mediawiki using below commands
 ```
@@ -91,7 +91,7 @@ drwxr-xr-x 3 root root 4.0K Sep  5 11:45 chart
 ```
 -rw-r--r-- 1 root root   24 Sep  5 11:44 README.md
 -rw-r--r-- 1 root root 1.3K Sep  5 15:08 Dockerfile
--rw-r--r-- 1 root root  34M Sep  5 15:24 mediawiki-1.31.0.tar.gz
+-rw-r--r-- 1 root root  34M Sep  5 15:24 mediawiki-1.39.2.tar.gz
 -rw-r--r-- 1 root root  109 Sep  5 16:57 php.ini
 -rw-r--r-- 1 root root  382 Sep  5 16:59 virtualhost.conf
 drwxr-xr-x 3 root root 4.0K Sep  5 17:01 chart
@@ -100,7 +100,7 @@ drwxr-xr-x 3 root root 4.0K Sep  5 17:01 chart
 
 >> Dockerfile : Docker file to create image mediawiki
 
->> mediawiki-1.31.0.tar.gz: source code for mediawiki
+>> mediawiki-1.39.2.tar.gz: source code for mediawiki
 
 >> virtualhost.conf : apache virtual hosting file for media wiki
 
@@ -119,7 +119,7 @@ drwxr-xr-x 3 root root 4.0K Sep  5 17:01 chart
 
 ### Steps to Deploy helm chart of mediawiki
 
-  1. Make sure you are inside mediawiki/chart/
+  1. Make sure you are inside frontend/mediawiki/chart/
 
   2. Edit the image name and tag name of image in values.yaml
 
