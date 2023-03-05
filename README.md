@@ -25,6 +25,41 @@ drwxr-xr-x 3 root root 4.0K Mar  5 17:43 frontend/mediawiki
 ```
 You will see two directory "database" and "mediawiki". These directory is divided based on backend(mariaDB database for mediawiki) and frontend(mediawiki)
 ```
+
+# kops k8s cluster on AWS:
+
+## Move to cluster directory now by using below commands
+```
+  cd cluster
+```
+### Again list all files and directory of cluster using below commands
+```
+  ls -ltrh
+```
+### Output:
+```
+-rw-r--r-- 1 root root 1.6K Mar  5 17:43 kops-k8s-cluster.sh
+```
+
+>> kops-k8s-cluster.sh : This file is used to provision k8s cluster using kops binary  
+>> Pre-requisite to provision k8s cluster : Install kops binary , kubectl ,aws cli on one of EC2 machine from following official page of each component 
+>> Configure AWS cli using credential 
+>> Create s3 bucket to store all config for k8s cluster 
+>> kops-k8s-cluster.sh: Execute this file on shell using this commands  "sh -x  kops-k8s-cluster.sh"
+>> once script execution get completed run : "kubectl get nodes" to check the node status 
+>> Now K8s cluster is ready to use please follow below steps to deply app 
+
+
+### Steps to create images for database:
+
+  1. Make sure you are inside database directory
+
+  2. Docker build . -t "IMAGE_NAME:TAG"
+
+  3. Tag docker images based on the repo name (docker tag xxxx:v1 xyz/xxxx:v1)
+
+  4. Push image to your registery (docker push xyz/xxxx:v1)
+
 # Database:
 
 ## Move to database directory now by using below commands
