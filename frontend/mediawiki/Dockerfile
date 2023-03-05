@@ -1,6 +1,6 @@
 FROM ubuntu:18.04
 
-MAINTAINER Nitish kumar <kumar.snitish1994@gmail.com>
+MAINTAINER Nitish kumar <nitishsingh1005@gmail.com>
 LABEL Description="MediaWiki"
 ENV DEBIAN_FRONTEND=noninteractive
 RUN apt-get update
