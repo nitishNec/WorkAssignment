@@ -16,9 +16,10 @@ NOTE: CI-CD approach steps are added in CI-CD-Approach.docx .Please download thi
 ```
 ### Output:
 ```
-drwxr-xr-x 3 root root 4.0K Sep  5 17:37 frontend/mediawiki
-drwxr-xr-x 3 root root 4.0K Sep  5 17:43 backend/database
--rw-r--r-- 1 root root 3.2K Sep  5 17:48 README.md
+drwxr-xr-x 3 root root 4.0K Mar  5 17:37 backend/database
+drwxr-xr-x 3 root root 4.0K Mar  5 17:43 frontend/mediawiki
+-rw-r--r-- 1 root root 3.2K Mar  5 17:48 README.md
+-rw-r--r-- 1 root root 3.2K Mar  5 17:48 CI-CD-Approach-Using-GitOps.docx
 ```
 ```
 You will see two directory "database" and "mediawiki". These directory is divided based on backend(mariaDB database for mediawiki) and frontend(mediawiki)
@@ -35,12 +36,12 @@ You will see two directory "database" and "mediawiki". These directory is divide
 ```
 ### Output:
 ```
--rw-r--r-- 1 root root   24 Sep  5 11:44 README.md
--rw-r--r-- 1 root root  619 Sep  5 11:44 Dockerfile
--rwxr-xr-x 1 root root   70 Sep  5 11:44 run.sh
--rw-r--r-- 1 root root  246 Sep  5 11:44 init.sql
-drwxr-xr-x 3 root root 4.0K Sep  5 11:45 chart
--rw-r--r-- 1 root root 1.6K Sep  5 17:43 Jenkinsfile
+-rw-r--r-- 1 root root   24 Mar  5 11:44 README.md
+-rw-r--r-- 1 root root  619 Mar  5 11:44 Dockerfile
+-rwxr-xr-x 1 root root   70 Mar  5 11:44 run.sh
+-rw-r--r-- 1 root root  246 Mar  5 11:44 init.sql
+drwxr-xr-x 3 root root 4.0K Mar  5 11:45 chart
+-rw-r--r-- 1 root root 1.6K Mar  5 17:43 Jenkinsfile
 ```
 
 >> Dockerfile : Docker file to create image of mariaDB
@@ -89,13 +90,13 @@ drwxr-xr-x 3 root root 4.0K Sep  5 11:45 chart
 ```
 ### Output:
 ```
--rw-r--r-- 1 root root   24 Sep  5 11:44 README.md
--rw-r--r-- 1 root root 1.3K Sep  5 15:08 Dockerfile
--rw-r--r-- 1 root root  34M Sep  5 15:24 mediawiki-1.39.2.tar.gz
--rw-r--r-- 1 root root  109 Sep  5 16:57 php.ini
--rw-r--r-- 1 root root  382 Sep  5 16:59 virtualhost.conf
-drwxr-xr-x 3 root root 4.0K Sep  5 17:01 chart
--rw-r--r-- 1 root root 1.6K Sep  5 17:37 Jenkinsfile
+-rw-r--r-- 1 root root   24 Mar  5 11:44 README.md
+-rw-r--r-- 1 root root 1.3K Mar  5 15:08 Dockerfile
+-rw-r--r-- 1 root root  34M Mar  5 15:24 mediawiki-1.39.2.tar.gz
+-rw-r--r-- 1 root root  109 Mar  5 16:57 php.ini
+-rw-r--r-- 1 root root  382 Mar  5 16:59 virtualhost.conf
+drwxr-xr-x 3 root root 4.0K Mar  5 17:01 chart
+-rw-r--r-- 1 root root 1.6K Mar  5 17:37 Jenkinsfile
 ```
 
 >> Dockerfile : Docker file to create image mediawiki
