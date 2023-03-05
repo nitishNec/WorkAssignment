@@ -49,17 +49,6 @@ You will see two directory "database" and "mediawiki". These directory is divide
 >> once script execution get completed run : "kubectl get nodes" to check the node status 
 >> Now K8s cluster is ready to use please follow below steps to deply app 
 
-
-### Steps to create images for database:
-
-  1. Make sure you are inside database directory
-
-  2. Docker build . -t "IMAGE_NAME:TAG"
-
-  3. Tag docker images based on the repo name (docker tag xxxx:v1 xyz/xxxx:v1)
-
-  4. Push image to your registery (docker push xyz/xxxx:v1)
-
 # Database:
 
 ## Move to database directory now by using below commands
