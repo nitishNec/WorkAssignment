@@ -17,6 +17,7 @@ NOTE: CI-CD approach steps are added in CI-CD-Approach.docx .Please download thi
 ### Output:
 ```
 drwxr-xr-x 3 root root 4.0K Mar  5 17:37 backend/database
+drwxr-xr-x 3 root root 4.0K Mar  5 17:37 cluster
 drwxr-xr-x 3 root root 4.0K Mar  5 17:43 frontend/mediawiki
 -rw-r--r-- 1 root root 3.2K Mar  5 17:48 README.md
 -rw-r--r-- 1 root root 3.2K Mar  5 17:48 CI-CD-Approach-Using-GitOps.docx
